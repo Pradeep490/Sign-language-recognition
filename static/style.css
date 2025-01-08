@@ -1,0 +1,235 @@
+
+h1 {
+    text-align: center;
+    font-size: 2.5em; /* Adjust the font size as needed */
+    color: #4285f4; /* Change the color to your desired color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+
+.recognized-sentence-1 {
+    color: green;
+}
+
+.recognized-sentence-2 {
+    color: blue;
+}
+
+.recent-label {
+    color: black;
+}
+
+
+.recognized-box {
+    width: 190px; /* Set the desired width */
+    height: auto; /* Adjust height based on content */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 30px; /* Adjust the border-radius as needed */
+    background-color: palegoldenrod;
+    box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #fff; /* Apply box shadow similar to .card */
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.camera-feed-container,
+.recognized-box {
+    width: 48%; /* Adjust width as needed */
+}
+
+.camera-feed-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+}
+
+.navbar a {
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.navbar a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0; /* Position from the right side */
+    height: 3px;
+    width: 0%;
+    background: #34efdf;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.navbar a:hover:before {
+    width: 100%;
+}
+
+.navbar a.center:before {
+    right: 50%; /* Adjust to position from the right */
+    transform: translateX(50%);
+}
+
+.navbar a.upward:before {
+    width: 100%;
+    bottom: -5px;
+    opacity: 0;
+}
+
+.navbar a.upward:hover:before {
+    bottom: 0px;
+    opacity: 1;
+}
+
+.navbar a.forward:before {
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.navbar a.forward:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: lightseagreen;
+}
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span, .footer-distributed .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    margin: 0;
+    color: #92999f;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
